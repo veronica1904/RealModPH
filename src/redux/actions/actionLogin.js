@@ -1,5 +1,6 @@
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import {google } from "../../Firebase/firebaseConfig";
+import { facebook } from "../../Firebase/firebaseConfig";
 import { typesLogin } from "../types/types"
 
 //-----------asyncronoGoogle--------------//
@@ -16,7 +17,21 @@ export const loginGoogle = ()=>{
         })
     }
 }
-//falta autenticar face 
+
+//-----------asyncronoFaceboock--------------//
+export const loginFacebook = ()=>{
+    return (dispatch)=>{
+        const auth = getAuth()
+        signInWithPopup(auth, facebook)
+       .then(({user})=>{
+            dispatch(loginSincronico(user.email, user.password))
+            console.log(user, 'Usuario autorizado')
+    })
+        .catch(error=>{
+            console.warn(error, 'No autorizado')
+        })
+    }
+}
 
 export const loginEmailPassAsync = (email, password)=>{
     return(dispatch)=>{
