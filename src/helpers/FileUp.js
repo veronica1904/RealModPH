@@ -1,9 +1,15 @@
+//la estructura o configuracion de cloudinary sera la misma, recordemos cambiar el nombre de nuestro id en la ruta de la url
+
+
 export const FileUp = async (file) => {
-    const urlCloudinary = ''
+    const urlCloudinary = 'https://api.cloudinary.com/v1_1/veronicaduque/upload'
     const formData = new FormData()
 
-    formData.append('upload_preset', 'frontend9'); //conectar con cloudinary, en este caso en amazonas
-    formData.append('file', file); // lo que voy a subir 
+
+    // archivo a subir, el realmod es el nombre que le doy en cloudinary
+    formData.append('upload_preset', 'realmod'); 
+    //le indico que sera de tipo archivo
+    formData.append('file', file); 
 
     const resp = await fetch(urlCloudinary, {
         method: 'POST',
