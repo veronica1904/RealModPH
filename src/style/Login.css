@@ -88,7 +88,7 @@
 }
 
 .divGoogle .google{
-    width: 80%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -129,7 +129,7 @@
 }
 
 .divFacebook .facebook{
-    width: 80%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.43);
     font-weight: normal;
-    font-size: calc(.5rem + 1vw);
+    font-size: calc(.4rem + 1vw);
     text-transform: capitalize;
     transition: all .3s;
 }

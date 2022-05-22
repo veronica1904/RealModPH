@@ -34,7 +34,6 @@ const App = () => {
       <div className='container-loader'>
       <img width='100px' src='https://ventanillavirtual.micm.gob.do/Images/straight-loader.gif'/>
       <img width='200px' src='https://res.cloudinary.com/veronicaduque/image/upload/v1652965425/RealMod/Logo_ofgtb3.png'/>
-      
   </div>
     )
   }
