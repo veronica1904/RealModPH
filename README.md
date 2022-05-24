@@ -12,6 +12,6 @@ Testing 💫
 ---
 Jest
 
-URL despliegue:
+URL despliegue: 
 ---
-https://realmod.vercel.app/
+https://real-mod-ph.vercel.app/
